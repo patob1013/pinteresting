@@ -44,7 +44,9 @@ Pinteresting::Application.configure do
 
   # Set to :debug to see everything in the log.
   config.log_level = :info
-
+  
+  #required for heroku
+config.action_mailer.default_url_options = { :host => 'http://pinteresting-commits.herokuapp.com/' }
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
 
